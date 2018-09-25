@@ -1,0 +1,1241 @@
+Theme Name: China Medical Device
+Author: Fanzappy
+Description: Custom theme for China Medical Device
+Theme URI: https://www.chinameddevice.com/
+Author URI: http://fanzappy.com/
+Template: betheme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ChinaMedicalDevice
+*/
+
+/* =Theme customization starts here
+------------------------------------------------------- */
+
+/*--------------------------------------------------------------------------------------
+/*
+/* BASIC MODIFICATIONS
+/*
+/*--------------------------------------------------------------------------------------
+*/
+
+div#Header_wrapper.bg-parallax {
+	background-color: #141414!important;
+}
+div.border-row-red div.vc_column-inner {
+	padding: 0!important;
+}
+
+@media only screen and (max-width: 767px) {
+img.reg_flow_chart {
+	display: none;
+}
+}
+
+/*--------------------------------------------------------------------------------------
+/*
+/* MENU OVERLAY
+/*
+/*--------------------------------------------------------------------------------------
+*/
+#overlay-menu ul li{
+	text-align:center;
+	text-transform: uppercase;
+}
+
+/*--------------------------------------------------------------------------------------
+/*
+/* MENU TOGGLE FIXES
+/*
+/*--------------------------------------------------------------------------------------
+*/
+.header-overlay a.overlay-menu-toggle {
+	top: 10px;
+}
+header#Header a.overlay-menu-toggle i.open.icon-menu-fine {
+	color: rgb(172, 24, 45);
+}
+header#Header a.overlay-menu-toggle.focus i.close.icon-cancel-fine {
+	color: /* close menu X-box color */rgb(255, 255, 255);
+	font-size: 1.25em;
+}
+
+@media only screen and (max-width: 767px) {
+.header-overlay a.overlay-menu-toggle {
+	top: 20px;
+}
+header#Header a.overlay-menu-toggle i.open.icon-menu-fine {
+	color: #fff!important;
+	background: #ac182d!important;
+}
+}
+/* = Menu Visted Fix ---------------------------------*/
+#overlay-menu ul li a:hover {
+	opacity: 1.0!important;
+}
+/*--------------------------------------------------------------------------------------
+/*
+/* ACTION BAR
+/*
+/*--------------------------------------------------------------------------------------
+*/
+#Action_bar {
+	padding: 0;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+#Action_bar ul.contact_details {
+	float: right;
+	padding-right: 115px;
+	font-size: 1.2em;
+}
+div#Action_bar ul.social {
+	border-right: 1px solid #fff;
+	padding: 5px 10px 5px 0;
+	margin: 15px 10px 15px 0;
+}
+ul.social li a {
+	font-size: 1.3em!important;
+}
+
+@media only screen and (max-width: 1100px) {
+div#Action_bar li.mail {
+	display: none;
+}
+}
+
+@media only screen and (max-width: 767px) {
+div#Action_bar {
+	background-color: rgb(172, 24, 45)!important;
+	padding: 22px 0 14px 0;
+}
+#Action_bar ul.contact_details {
+	float: none;
+	padding-right: 0;
+	padding-top: 8px;
+	font-size: 1.2em;
+	color: rgb(255, 255, 255);
+}
+#Action_bar ul.contact_details li {
+	white-space: nowrap;
+}
+#Action_bar ul.contact_details li a:hover, #Action_bar ul.contact_details li a:focus {
+	color: rgb(239, 152, 48);
+	text-decoration: none;
+}
+div#Action_bar li.mail {
+	display: inline!important;
+}
+div#Action_bar ul.social {
+	border-right: 0;
+	padding: 0;
+	margin: 7px 0 0 0;
+}
+ul.social li a {
+	font-size: 1.7em!important;
+}
+div#Action_bar ul.social li a {
+	color: rgba(255, 255, 255, .5);
+}
+div#Action_bar ul.social li a:hover, div#Action_bar ul.social li a:focus {
+	color: rgba(255, 255, 255, 1.0);
+}
+}
+
+@media only screen and (max-width: 479px) {
+div#Action_bar ul.contact_details {
+	padding-right: 24px;
+	line-height: 200%;
+}
+div#Action_bar {
+	background-color: rgb(172, 24, 45)!important;
+	padding: 10px 0 7px 0;
+}
+div#Action_bar ul.contact_details li.mail {
+	display: inline!important;
+	font-size: 1.4em;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+div#Action_bar ul.contact_details li.phone {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+div#Action_bar ul.social {
+	border-right: 0;
+	padding: 0;
+	margin: 7px 0 0 0;
+}
+ul.social li a {
+	font-size: 1.7em!important;
+}
+div#Action_bar ul.social li a {
+	color: rgba(255, 255, 255, .5);
+}
+div#Action_bar ul.social {
+	display: none;
+}
+ul.social li a {
+	font-size: 1.7em!important;
+}
+}
+/* footer text-align fix */
+footer#Footer.clearfix .widget {
+	text-align: center!important;
+}
+
+/*--------------------------------------------------------------------------------------
+/*
+/* CMD LOGO
+/*
+/*--------------------------------------------------------------------------------------
+*/
+@media only screen and (max-width: 767px) {
+div.logo {
+	background-color: rgb(0, 0, 0);
+}
+#Top_bar {
+	position: absolute;
+	left: 0;
+	top: 61px;
+	width: 100%;
+	z-index: 30
+}
+}
+
+/* fixes logo overlapping the homepage slide on mobile devices */
+@media only screen and (max-width: 479px) {
+.headerSlideTxt center {
+	margin-top: 43px;
+}
+.headerSlideBtn {
+	margin-top: 43px!important;
+}
+div.logo a#logo {
+	margin: 0 0 0 0!important;
+	padding-right: 7%!important;
+}
+a#logo img.logo-mobile.scale-with-grid {
+	padding: 0!important;
+	margin: 0!important;
+}
+}
+/*--------------------------------------------------------------------------------------
+/*
+/* CMD DIAGRAMS
+/*
+/*--------------------------------------------------------------------------------------
+*/
+div.diagram_blue {
+	background: #0193b9;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	padding: 12px 10px;
+	margin: 0px;
+	color: #fff;
+}
+div.diagram_blue h3 {
+	margin: 0px;
+	color: #fff;
+	line-height: 1.1em;
+	font-size: 2.2em;
+}
+div.diagram_blue h4, div.diagram_blue h5 {
+	margin: 0px;
+	color: #fff;
+	line-height: 1.2em;
+	font-size: 1.8em;
+	font-weight: 300;
+}
+ul#cycle_chart_home li img {
+	margin: 0 8px 0 0;
+	float: left;
+}
+ul#cycle_chart_home {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	list-style-type: none;
+}
+ul#cycle_chart_home li {
+	margin: 0 auto;
+	padding: 12px 10px;
+	display: block;
+	width: 100%;
+	height: 76px;
+	line-height: 76px;
+	text-align: left;
+	color: #fff;
+	font-size: 16px;
+}
+ul#cycle_chart_home li.diagram_orange {
+	background: #ef6f01 url("../../uploads/2017/06/bg-arrow-diagram.png") no-repeat 75% 0;
+}
+ul#cycle_chart_home li.diagram_yellow {
+	background: #ef9831 url("../../uploads/2017/06/bg-arrow-diagram.png") no-repeat 75% 0;
+}
+ul#cycle_chart_home li.diagram_blue {
+	background: #0193b9 url("../../uploads/2017/06/bg-arrow-diagram.png") no-repeat 75% 0;
+}
+ul#cycle_chart_home li.diagram_red {
+	background: #ac182d url("../../uploads/2017/06/bg-arrow-diagram.png") no-repeat 75% 0;
+}
+ul#cycle_chart_home li.diagram_ltred {
+	background: #af5d6d url("../../uploads/2017/06/bg-arrow-diagram.png") no-repeat 75% 0;
+}
+ul#cycle_chart_home li.diagram_grn {
+	background: #7a9e21 url("../../uploads/2017/06/bg-arrow-diagram.png") no-repeat 75% 0;
+}
+ul#cycle_chart_home li.diagram_ltgrn {
+	background: #a6bf58 url("../../uploads/2017/06/bg-arrow-diagram.png") no-repeat 75% 0;
+}
+ul#cycle_chart_home li a {
+	color: #fff!important;
+	text-decoration: underline!important;
+}
+/*--------------------------------------------------------------------------------------
+/*
+/* TYPOGRAPHY
+/*
+/*--------------------------------------------------------------------------------------
+*/
+ul.checkMarkList {
+}
+ul.checkMarkList li {
+	display: inline;
+	padding: 0 30px 0 0;
+	font-size: 28px;
+	line-height: 30px;
+	font-weight: 600;
+	letter-spacing: 0px;
+}
+ul.checkMarkList li:before {
+	font-family: 'FontAwesome';
+	content: '\f058';
+	margin: 0 8px 0 -15px;
+	color: rgba(255, 255, 255, 0.35);
+	font-size: 26px;
+}
+.large_number h3 {
+	white-space: nowrap!important;
+}
+.white_text, .white_text h1, .white_text h2, .white_text h3, .white_text h4, .white_text h5, .white_text h6, .white_text p {
+	color: #fff!important;
+}
+div.check_bullits ul {
+	color: #333;
+	font-weight: 400;
+	list-style: none;
+}
+div.check_bullits ul li:before {
+	font-family: 'FontAwesome';
+	content: '\f00c';
+	margin: 0 8px 0 -25px;
+	color: #ef9830;
+}
+div.check_bullits ul li ol {
+	color: #333;
+	font-weight: 400;
+}
+div.check_bullits ul li ol li:before {
+	display: none!important;
+}
+/*
+a.pdf, a.doc, div.pdf a {
+	display: inline-block;
+	vertical-align: baseline;
+	zoom: 1;
+ *display:inline;
+	background: url(../../uploads/2017/06/pdficon_large.png) transparent 0px -2px no-repeat;
+	background-size: 26px 26px;
+	padding: 2px 2px 2px 30px;
+	cursor: pointer;
+}*/
+a.doc {
+	background-image: url(../img/doc.png);
+}
+.red_text h1, .red_text h2, .red_text h3, .red_text h4, .red_text h5, .red_text h6, .red_text p {
+	color: #ac182d;
+}
+aside#recent-posts-4.widget.widget_recent_entries ul li a:hover, aside#recent-posts-5.widget.widget_recent_entries ul li a:hover {
+	color: #fff;
+}
+/*--------------------------------------------------------------------------------------
+/*
+/* MAILCHIMP JOIN FORM: CUSTOMIZED FOR CMD
+/*
+/* MailChimp Form Embed Code - Horizontal Super Slim - 12/16/2015 v10.7
+Adapted from: http://blog.heyimcat.com/universal-signup-form/ */
+/*
+/*--------------------------------------------------------------------------------------
+*/
+/*#mc_embed_signup_top form {
+	text-align: left;
+	padding: 0;
+	margin: 5px 0;
+}
+.mc-field-group {
+	display: inline-block;
+} /* positions input field horizontally *!/
+#mc_embed_signup_top input.email {
+	font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+	font-size: 14px;
+	border: 1px solid #ABB0B2;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #343434;
+	background-color: #fff;
+	box-sizing: border-box;
+	height: 32px;
+	padding: 0px 0.4em;
+	display: inline-block;
+	margin: 0;
+	width: 200px;
+	vertical-align: top;
+}
+#mc_embed_signup_top label {
+	display: block;
+	font-size: 16px;
+	padding-bottom: 10px;
+	font-weight: bold;
+}
+#mc_embed_signup_top .clear {
+	display: inline-block;
+} /* positions button horizontally in line with input *!/
+#mc_embed_signup_top .button {
+	font-size: 14px;
+	border: 2px solid #ef9830;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	letter-spacing: .03em;
+	color: #ef9830!important;
+	background-color: #aaa;
+	box-sizing: border-box;
+	height: 32px;
+	line-height: 32px;
+	padding: 0 18px;
+	display: inline-block;
+	margin: 0;
+	transition: all 0.23s ease-in-out 0s;
+}
+#mc_embed_signup_top .button:hover {
+	background-color: #ef9830!important;
+	cursor: pointer;
+	color: #fff!important;
+	border: 2px solid #ef9830;
+}*!/
+#mc_embed_signup_top div#mce-responses {
+	float: left;
+	top: -1.4em;
+	padding: 0em .5em 0em .5em;
+	overflow: hidden;
+	width: 90%;
+	margin: 0 5%;
+	clear: both;
+}
+#mc_embed_signup_top div.response {
+	margin: 1em 0;
+	padding: 1em .5em .5em 0;
+	font-weight: bold;
+	float: left;
+	top: -1.5em;
+	z-index: 1;
+	width: 80%;
+}
+#mc_embed_signup_top #mce-error-response {
+	display: none;
+}
+#mc_embed_signup_top #mce-success-response {
+	color: #529214;
+	display: none;
+}
+#mc_embed_signup_top label.error {
+	display: block;
+	float: none;
+	width: auto;
+	margin-left: 1.05em;
+	text-align: left;
+	padding: .5em 0;
+}
+div#mc_embed_signup_top {
+	padding: 0;
+	margin: 0;
+}
+
+
+@media (max-width: 768px) {
+#mc_embed_signup_top input.email {
+	width: 100%;
+	margin-bottom: 5px;
+}
+#mc_embed_signup_top .clear {
+	display: block;
+	width: 100%
+}
+#mc_embed_signup_top .button {
+	width: 100%;
+	margin: 0;
+}
+}*/
+
+/*CONSTANT CONTACT*/
+div#mc_embed_signup_scroll {
+	text-align: left;
+	padding: 0;
+	margin: 5px 0;
+}
+div#mc_embed_signup_scroll input {
+	font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
+	font-size: 14px;
+	border: 1px solid #ABB0B2;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #343434;
+	background-color: #fff;
+	box-sizing: border-box;
+	height: 32px;
+	padding: 0px 0.4em;
+	display: inline-block;
+	margin: 0;
+	width: 200px;
+	vertical-align: top;
+}
+button#mc-embedded-subscribe.Button.ctct-button.Button--block.Button-secondary.button_label.button {
+	font-size: 14px;
+	border: 2px solid #ef9830;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	letter-spacing: .03em;
+	color: #ef9830!important;
+	background-color: #aaa;
+	box-sizing: border-box;
+	height: 32px;
+	line-height: 32px;
+	padding: 0 18px;
+	display: inline-block;
+	margin: 0;
+	transition: all 0.23s ease-in-out 0s;
+}
+button#mc-embedded-subscribe.Button.ctct-button.Button--block.Button-secondary.button_label.button:hover {
+	background-color: #ef9830!important;
+	cursor: pointer;
+	color: #fff!important;
+	border: 2px solid #ef9830;
+}
+#Action_bar ul.contact_details li.slogan {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	left: 3%;
+}
+/*footer cc form */
+div#btmSignUpForm {
+	text-align: center;
+}
+div#btmSignUpForm button#mc-embedded-subscribe.Button.ctct-button.Button--block.Button-secondary.button_label.button, div#btmSignUpForm div#mc_embed_signup_scroll input {
+	float: none!important;
+}
+div#btmSignUpForm div#mc_embed_signup_scroll {
+	text-align: center;
+}
+footer#Footer.clearfix div.footer_action div.widgets_wrapper {
+	border-top: 1px solid #aaa;
+}
+/*--------------------------------------------------------------------------------------
+/*
+/* GRAVITY FORMS MODIFICATIONS
+/*
+/*--------------------------------------------------------------------------------------
+*/
+.LCFormCol1 {
+	width: 33%;
+	float: left;
+	padding: 0 1% 0 0;
+	margin: 0;
+}
+.LCFormCol2 {
+	width: 34%;
+	float: left;
+	padding: 0 1%;
+	margin: 0;
+}
+.LCFormCol3 {
+	width: 33%;
+	float: right;
+	padding: 0 0 0 1%;
+	margin: 0;
+}
+.LCFormSubmit {
+	width: 100%;
+	text-align: center;
+	float: left;
+}
+
+@media only screen and (max-width: 767px) {
+.LCFormCol1 {
+	width: 49%;
+	float: left;
+	padding: 0 1% 0 0;
+	margin: 0;
+}
+.LCFormCol2 {
+	width: 49%;
+	float: right;
+	padding: 0 0 0 0;
+	margin: 0;
+}
+.LCFormCol3 {
+	width: 49%;
+	float: left;
+	padding: 0 1% 0 0;
+	margin: 0;
+}
+.LCFormSubmit {
+	width: 48%;
+	text-align: center;
+	float: right;
+	padding: 10px 0 0 2%;
+	margin: 0;
+}
+}
+
+@media only screen and (max-width: 480px) {
+.LCFormCol1 {
+	width: 100%;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+.LCFormCol2 {
+	width: 100%;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+.LCFormCol3 {
+	width: 100%;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+.LCFormSubmit {
+	width: 100%;
+	text-align: center;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+}
+/* submit button */
+.gf_form_section_services_pages input#gform_submit_button_2.gform_button.button {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin: 0 0 0 -75px;
+	width: 150px;
+	font-size: 16px;
+	font-weight: 600!important;
+}
+.cmd_gf_service_form input {
+	margin: 0 0 17px 0!important;
+}
+/*--------------------------------------------------------------------------------------
+/*
+/* TESTIMONIALS
+/*
+/*--------------------------------------------------------------------------------------
+*/
+/*.CMDclientTestimonialSection div, .CMDclientTestimonialSection p, .CMDclientTestimonialSection img, .CMDclientTestimonialSection h5, .CMDclientTestimonialSection h3, .CMDclientTestimonialSection h2 {
+	text-align: left!important;
+}
+.cmd-reverse-type blockquote, .cmd-reverse-type h5, .cmd-reverse-type span.company {
+	color: rgba(255, 255, 255, 1.0)!important;
+}*/
+
+div.testimonials_slider div.author h5, div.testimonials_slider div.author p, div.testimonials_slider div.author span.company, div.testimonials_slider div.author h6, div.testimonials_slider div.author h4, div.testimonials_slider div.author h5 {
+	color: #ffffff;
+}
+div.testimonials_slider blockquote {
+	color: #ffffff!important;
+}
+/* page customizations */
+
+/*--------------------------------------------------------------------------------------
+/*
+/* PAGE: REGULATORY SERVICES
+/*
+/*--------------------------------------------------------------------------------------
+*/
+
+body.page-id-2313 div#Subheader div.container div.column.one h1.title {
+	height: 140px;
+	margin-bottom: -140px;
+	background: url(../../uploads/2015/05/cfda-logo-reg-page.png) no-repeat 50% 70px;
+	background-size: 15%;
+}
+
+@media only screen and (max-width: 768px) {
+body.page-id-2313 div#Subheader div.container div.column.one h1.title {
+	height: 100px;
+	margin-bottom: -100px;
+	margin-top: -50px;
+	background: url(../../uploads/2015/05/cfda-logo-reg-page.png) no-repeat 50% 50px;
+	background-size: 25%;
+}
+}
+
+@media only screen and (max-width: 575px) {
+body.page-id-2313 div#Subheader div.container div.column.one h1.title {
+	height: 150px;
+	margin-bottom: -150px;
+	margin-top: -75px;
+	background: url(../../uploads/2015/05/cfda-logo-reg-page.png) no-repeat 50% 85px;
+	background-size: 40%;
+}
+}
+
+@media only screen and (max-width: 479px) {
+body.page-id-2313 div#Subheader div.container div.column.one h1.title {
+	height: 140px;
+	margin-bottom: -140px;
+	margin-top: -70px;
+	background: url(../../uploads/2015/05/cfda-logo-reg-page.png) no-repeat 50% 70px;
+	background-size: 50%;
+}
+}
+
+/*--new page --*/
+body.page-id-3642 div#Subheader div.container div.column.one h1.title {
+	height: 190px;
+	margin-bottom: -140px;
+	background: url(../../uploads/2015/05/cfda-logo-reg-page.png) no-repeat 50% 120px;
+	background-size: 15%;
+}
+
+@media only screen and (max-width: 768px) {
+body.page-id-3642 div#Subheader div.container div.column.one h1.title {
+	height: 200px;
+	margin-bottom: -50px;
+	margin-top: -50px;
+	background: url(../../uploads/2015/05/cfda-logo-reg-page.png) no-repeat 50% 140px;
+	background-size: 25%;
+}
+}
+
+@media only screen and (max-width: 575px) {
+body.page-id-3642 div#Subheader div.container div.column.one h1.title {
+	height: 240px;
+	margin-bottom: -30px;
+	margin-top: -75px;
+	background: url(../../uploads/2015/05/cfda-logo-reg-page.png) no-repeat 50% 190px;
+	background-size: 40%;
+}
+}
+
+@media only screen and (max-width: 479px) {
+body.page-id-3642 div#Subheader div.container div.column.one h1.title {
+	height: 230px;
+	margin-bottom: -45px;
+	margin-top: -70px;
+	background: url(../../uploads/2015/05/cfda-logo-reg-page.png) no-repeat 50% 170px;
+	background-size: 50%;
+}
+}
+
+/* mobile hide & show */
+
+@media only screen and (min-width: 480px) {
+.mobile_hide {
+	display: block;
+}
+.mobile_show {
+	display: none;
+}
+}
+
+@media only screen and (max-width: 479px) {
+.mobile_hide {
+	display: none;
+}
+.mobile_show {
+	display: block;
+}
+}
+/*--------------------------------------------------------------------------------------
+/*
+/* PAGE: RESOURCES
+/*
+/*--------------------------------------------------------------------------------------
+*/
+ul#menu-resources.menu {
+	list-style-type: none;
+	padding: 0x 10px 0 0;
+	background: none;
+}
+ul#menu-resources.menu li:after {
+	display: none;
+}
+.ul#menu-resources.menu li a {
+	display: block;
+	padding: 5px;
+}
+ul#menu-resources.menu li {
+}
+ul#menu-resources.menu li:before {
+	font-family: 'FontAwesome';
+	content: '\f0da';
+	margin: 0;
+	padding: 0;
+	color: #ef9830;
+	line-height: 0;
+	baseline-shift: 0;
+	position: absolute;
+	left: -20px;
+	top: 17px;
+}
+/* RESOURCES TABLES */
+table.resourcesTable {
+	border: 1px solid #d3d3d3;
+}
+table.resourcesTable a {
+	text-decoration: underline;
+}
+table.resourcesTable a:hover, table.resourcesTable a:focus {
+	text-decoration: none;
+	color: #ac182d!important;
+}
+table.resourcesTable tr:first-child {
+	background: #f1f1f1;
+	font-weight: 600;
+}
+div.vc_tta-tabs-container ul.vc_tta-tabs-list li.vc_tta-tab {
+	font-size: 136%;
+}
+div.vc_tta-tabs-container ul.vc_tta-tabs-list li.vc_tta-tab {
+	font-size: 136%;
+}
+div.vc_tta-tabs-container ul.vc_tta-tabs-list li.vc_tta-tab.vc_active a {
+	font-weight: 600;
+}
+/*--------------------------------------------------------------------------------------
+/*
+/* BLOG CATEGORY HEADER IMAGES
+/*
+/*--------------------------------------------------------------------------------------
+*/
+
+.category-market-access #Subheader {
+	background: url('../../uploads/2017/07/header-img-market-access.jpg') no-repeat 50% 50%;
+	padding-bottom: 120px!important;
+}
+.category-cfda-updates #Subheader {
+	background: url('../../uploads/2017/08/header-img-cfda-updates-fnl.jpg') no-repeat 50% top;
+	padding-bottom: 120px!important;
+}
+.category-funding-resources #Subheader {
+	background: url('../../uploads/2017/08/header-img-funding-fnl.jpg') no-repeat 50% top;
+	padding-bottom: 120px!important;
+}
+/*--------------------------------------------------------------------------------------
+/*
+/* SIDE MENU ITEMS FOR CUSTOM BLOGS WIDGET—SUBCATEGORIES & MAIN CATEGORIES
+/*
+/*--------------------------------------------------------------------------------------
+*/
+
+div.catSubList {
+	border-bottom: 5px solid #ac182d;
+	border-top: 5px solid #ac182d;
+	padding: 0 20px;
+	margin: -31px -20px -31px;
+	background: #f8f8f8;
+}
+div.catSubList ul.menu {
+	list-style-type: square;
+	padding: 5px 10px 5px 30px;
+	color: #ac182d;
+}
+div.catSubList li a {
+	display: block;
+	padding: 10px 0;
+}
+div.catSubList li {
+	position: relative;
+}
+div.catSubList ul li:after {
+	content: "";
+	display: block;
+	width: 70px;
+	border-width: 0 0 1px;
+	border-style: solid;
+	border-color: rgba(0,0,0,.1);
+	position: absolute;
+	left: -30px;
+	bottom: 0;
+}
+div.catSubList ul li:last-child:after {
+	display: none;
+}
+/* sidebar header styles */
+div.catSubList h2 {
+	padding: 10px 0;
+	font-size: 1.85em;
+	line-height: 100%;
+	margin: 0;
+	border: none;
+}
+div.catSubList h2:after {
+	font-family: 'FontAwesome';
+	content: '\f1ea';
+	margin: 0 0 0 5px;
+	color: rgb(239, 152, 48);
+	font-size: 26px;
+}
+div.catSubList h3 {
+	padding: 10px 0!important;
+	border: none!important;
+	margin-bottom: 0;
+	line-height: 100%;
+	font-size: 1.4em;
+	font-weight: 400;
+}
+div.catSubList h4 {
+	content: "Categories";
+	border-top: 3px solid #ef9830!important;
+	padding: 20px 0 0 0!important;
+	font-size: 18px;
+	/*font-weight: 400;*/
+	line-height: 100%;
+	/*color: #ac182d;*/
+	margin: 0!important;
+}
+/* sidebar header subcategory link styles */
+div.catSubList h3 a, div.catSubList h2 a, div.catSubList h4 a {
+	color: #ac182d;
+}
+div.catSubList h3 a:hover, div.catSubList h2 a:hover, div.catSubList h4 a:hover, div.catSubList h3 a:focus, div.catSubList h2 a:focus, div.catSubList h4 a:focus {
+	text-decoration: underline;
+	color: #ef9830;
+}
+/* gravity forms blog sidebar */
+.formSidebarBlogs {
+}
+.formSidebarBlogs .gfield_visibility_visible {
+	padding: 0!important;
+	margin: 0!important;
+}
+aside.widget.gform_widget {
+	background-color: #ef9830;
+	padding: 20px;
+	margin: 0 -20px 20px -20px;
+}
+form.formSidebarBlogs input {
+	margin: 0 0 10px!important;
+}
+form.formSidebarBlogs span {
+	margin: 0 0 -7px 0!important;
+	padding: 0;
+}
+form.formSidebarBlogs div.gform_footer {
+	margin: 0;
+	padding: 0;
+}
+input#gform_submit_button_3.gform_button.button {
+	margin-bottom: 0!important;
+}
+div.formSidebarBlogs_wrapper {
+	margin-bottom: 0;
+}
+aside.formSidebarBlogsWidget h4, aside.formSidebarBlogsWidget h3 {
+	font-size: 140%;
+	font-weight: 600!important;
+	color: #fff
+}
+aside.customBlogTextWidget {
+	margin-bottom: 0;
+}
+/*--------------------------------------------------------------------------------------
+/*
+/* THEME SIDEBAR MODIFICATIONS
+/*
+/*--------------------------------------------------------------------------------------
+*/
+aside.widget.widget_archive label.screen-reader-text {
+	content: "Archive";
+	display: none;
+}
+aside#archives-11.widget.widget_archive h3:after {
+	font-family: 'FontAwesome';
+	content: '\f187';
+	margin: 0 0 0 5px;
+	font-size: 16px;
+}
+/*--------------------------------------------------------------------------------------
+/*
+/* POST PAGE MODIFICATIONS
+/*
+/*--------------------------------------------------------------------------------------
+*/
+div.section.section-post-header div.section_wrapper.clearfix div.column.one.post-nav {
+	background: none;
+}
+div.section.section-post-header ul.next-prev-nav li.prev a.button.button_js span.button_icon i.icon-left-open {
+	color: #ac182d;
+}
+div.section.section-post-header div.title_wrapper h1.entry-title {
+	display: none;
+}
+div.section.section-post-header div.share_wrapper {
+	text-align: left;
+	padding-left: 0px!important;
+}
+div#Subheader div.container div.column.one h1.title {
+	margin: 20px 0 -20px 0/* moves title down away from logo*/;
+}
+/*--------------------------------------------------------------------------------------
+/*
+/* POST PAGE STYLES
+/*
+/*--------------------------------------------------------------------------------------
+*/
+
+/*.category-market-access div.post-desc-wrapper div.post-desc div.post-head div.post-meta.clearfix div.category span.cat-btn {
+	display: none;
+	}*/
+
+
+div.category.mata-tags, div.category.meta-categories {
+	display: none;
+}
+div.section-post-header div.share_wrapper {
+	background: none;
+	border: none;
+}
+span.stButton div div.stBubble {
+	display: none!important;
+}
+aside.widget.widget_nav_menu ul {
+	background: none;
+	border: none;
+}
+.pager .pages {
+	border: none!important;
+	background: none!important;
+}
+div.post-footer {
+	background-color: rgba(239, 152, 48, .1)
+}
+div.post-desc-wrapper div.post-desc div.post-footer div.post-links i.icon-doc-text {
+	color: rgb(239, 152, 48);
+}
+div.post-desc-wrapper div.post-desc div.post-footer div.post-links {
+	border-left: 1px solid rgb(172, 24, 45);
+}
+div#Header_wrapper.bg-parallax {
+	background-color: #141414!important;
+}
+
+/*--------------------------------------------------------------------------------------
+/*
+/* ACCORDIAN STYLEING LANDING PAGES
+/*
+/*--------------------------------------------------------------------------------------
+*/
+.accordion-sections .vc_tta-title-text {
+	 font-weight: 600;
+	 font-size: .8em;
+}
+.accordion-sections div.vc_tta-panel-body {
+    padding-left: 47px!important;
+    padding-bottom: 40px!important;
+}
+.accordion-sections div.vc_tta-panel-body p, .accordion-sections div.vc_tta-panel-body ul, .accordion-sections div.vc_tta-panel-body p, .accordion-sections div.vc_tta-panel-body li, .accordion-sections div.vc_tta-panel-body p, .accordion-sections div.vc_tta-panel-body h4, .accordion-sections div.vc_tta-panel-body p, .accordion-sections div.vc_tta-panel-body h3, .accordion-sections div.vc_tta-panel-body p, .accordion-sections div.vc_tta-panel-body h2 {
+    color: #000!important;
+}
+.accordion-sections div.vc_tta-panel-heading {
+	background-color: #ddd!important;
+	
+}
+.vc_active.accordion-sections .vc_tta-title-text {
+	color: #000!important;
+}
+div#Content div.content_wrapper.clearfix div.sections_group div.entry-content div.section.the_content.has_content div.section_wrapper div.the_content_wrapper div.vc_row.wpb_row.vc_row-fluid div.wpb_column.vc_column_container.vc_col-sm-12 div.vc_column-inner div.wpb_wrapper div.vc_tta-container {
+	border: 1px solid #333;
+	margin-bottom: 80px;
+}
+
+/*--------------------------------------------------------------------------------------
+/*
+/* WPDM MODIFICATIONS
+/*
+/*--------------------------------------------------------------------------------------
+*/
+.link-btn.pcenter{
+    display: block; float: none;margin: 0 auto;
+}
+
+.ptitle{
+    font-size: 11pt;
+    font-weight: 900;
+    margin-bottom: 5px;
+    font-family: Montserrat, "segoe ui", serif;  
+}
+
+.wbt-content{
+    padding: 7px !important;
+    color: #333;
+}
+
+.w3eden .panel {
+    box-shadow: none !important;
+    text-align: center;
+    color: #aa1b30;
+    text-align: center;
+}
+.w3eden .panel-footer {
+    background: #f2f5f7;
+    border-top: 1px solid #D2D6D8;
+    font-size: 9pt;
+    text-align: center;
+}
+
+div.w3eden div.panel.panel-default div.panel-body span.text-danger {
+	color: #aa1b30;
+}
+
+div.w3eden div.panel.panel-default div.panel-footer.text-right a.btn.btn-danger.btn-sm {
+	background-color: #aa1b30;
+}
+
+/*icons*/
+img.wpdm_icon {
+	width: 20px;
+	margin: 0 5px 0px 0;
+}
+
+div.w3eden {
+	margin: 0!important;
+}
+
+/*text-links*/
+div.w3eden a {
+	color: #aa1b30;
+}
+
+div.w3eden a:hover, div.w3eden a:focus  {
+	color: #aa1b30;
+}
+div.w3eden a {
+	color: #aa1b30!important;
+	font-weight: bold!important;
+}
+
+div.w3eden div a:hover, div.w3eden div a:focus{
+	color: #aa1b30;
+}
+
+/*Download Page*/
+div.wpdmpro.type-wpdmpro div.section_wrapper.clearfix {
+	display: none;
+}
+
+div.wpdmpro.type-wpdmpro ul li button.btn-inverse.btn-sm {
+	color: #333333!important;
+}
+
+div.wpdmpro.type-wpdmpro ul li button.btn-inverse.btn-sm:hover {
+	background-color:  rgb(239, 152, 48)!important;
+}
+
+div.wpdmpro.type-wpdmpro span.badge {
+	background-color:  #eaeaea;
+	color: #333;
+}
+div.wpdmpro.type-wpdmpro span.text-danger {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+div.wpdmpro.type-wpdmpro ul li.list-group-item.text-right {
+	text-align:  center!important;
+}
+div.wpdmpro.type-wpdmpro ul li a.wpdm-download-link.wpdm-download-locked {
+	font-size: 20px!important;
+	padding: 2px 20px!important;
+	border: 1px solid #333;
+	border-radius: 2px;
+	background: #aa1b30;
+	color: #fff!important;
+}
+table.wpdm-filelist.table.table-hover tbody tr td.text-right a.btn.btn-primary.btn-xs {
+	background: #aa1b30;
+	border: #fff;
+}
+
+
+/*--------------------------------------------------------------------------------------
+/*
+/* RESOURCES PAGE MODIFICATIONS
+/*
+/*--------------------------------------------------------------------------------------
+*/
+div#resourcesTabs li.vc_tta-tab a {
+	font-size: 18px;
+}
+
+/*--------------------------------------------------------------------------------------
+/*
+/* STORE
+/*
+/*--------------------------------------------------------------------------------------
+*/
+div.media_header_btn a.vc_general, div.media_header_btn a.vc_general:active {
+	color: #fff!important;
+	font-family: Montserrat, Arial, sans-serif!important;
+	padding: 12px 38px 24px 38px!important;
+	border-color: #fff!important;
+}
+
+div.media_header_btn a.vc_general:hover, div.media_header_btn a.vc_general:focus {
+	color: #ed973d!important;
+	border-color: #ed973d!important;
+	background: none !important;
+}
+
+
+div.media_header_btn a.vc_general i.vc_btn3-icon {
+	position: absolute;
+	text-align: center;
+	top: 2em;
+	left: 0%;
+	width: 100%;
+	
+}
+
+div.wpdmpro.type-wpdmpro h1, div.wpdmpro.type-wpdmpro h2, div.wpdmpro.type-wpdmpro h3, div.wpdmpro.type-wpdmpro h4, div.wpdmpro.type-wpdmpro h5, div.wpdmpro.type-wpdmpro h6, div.wpdmpro.type-wpdmpro li, div.wpdmpro.type-wpdmpro a, div.wpdmpro.type-wpdmpro button, .wpdmpro.type-wpdmpro p {
+	font-family: Montserrat, Arial, sans-serif;
+}
+
+div.wpdmpro.type-wpdmpro h1 {
+	font-size: 54px;
+		font-weight: 300;
+	}
+
+@media screen and (max-width: 768px) {
+	
+
+div.wpdmpro div.post-wrapper-content div.the_content.has_content div.the_content_wrapper div.vc_empty_space {
+		display: none;
+		
+	}
+	
+	div#Content div.content_wrapper div.entry-content div.the_content.has_content div.store_empty_space {
+		display: none;
+	}
+}
+
