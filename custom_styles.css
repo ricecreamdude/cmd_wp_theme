@@ -1,0 +1,78 @@
+/*
+You can type here custom CSS code, which will be loaded both on your admin and front-end pages. Please make sure to not override layout properties (positions and sizes), as they can interfere with the sliders built-in responsive functionality. Here are few example targets to help you get started:
+*/
+
+.ls-container { /* Slider container */
+
+}
+
+.ls-layers { /* Layers wrapper */
+
+}
+
+.ls-3d-box div { /* Sides of 3D transition objects */
+
+}
+
+/* #Mobile (Portrait) < 480 ------------------------ #Mobile (Portrait) < 480 */
+@media only screen and (min-width: 448px) and (max-width: 500px)
+{ }
+
+/* #Mobile, Large < 425 ---------------------------------------------------- */
+@media only screen and (max-width: 425px)
+{
+  #logo {
+		height: 140px !important;
+		line-height: 140px !important;
+	}
+  	div#Action_bar{
+  	padding: 0px 0 0px 0 !important;
+	}
+
+	#Action_bar .contact_details a {
+		font-size: 18px;
+	}
+}
+
+/* #Mobile, Medium < 375 ----------------------------------------------------*/
+@media only screen and (max-width: 375px)
+{
+  #logo {
+		height: 130px !important;
+		line-height: 130px !important;
+	}
+  	div#Action_bar{
+  	padding: 0px 0 0px 0 !important;
+	}
+
+	#Action_bar .contact_details a {
+		font-size: 16px;
+	}
+)
+
+/* #Mobile, Small < 320 -----------------------------------------------------*/
+@media only screen and (max-width: 320px)
+{
+  #logo {
+		height: 130px !important;
+		line-height: 130px !important;
+	}
+  div#Action_bar{
+  	padding: 0px 0 0px 0 !important;
+	}
+  	#Action_bar .contact_details a {
+  		font-size: 16px;
+  	}
+  .headerSlideTxt center	{
+    font-size: 22px;
+    margin-top: 60px;
+  }
+  /* Slider Image Height*/
+  #rev_slider_1_1_wrapper{
+    height: 220px;
+  }
+  /* 'Learn More' Button */
+  .tp-parallax-wrap {
+    visibility: hidden;
+  }
+)
