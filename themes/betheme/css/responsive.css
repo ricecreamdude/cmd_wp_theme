@@ -1032,7 +1032,6 @@ html,body{overflow-x:hidden}
 @media only screen and (max-width: 479px)
 {
 	#Top_bar a.button.action_button{margin-right:0}
-
 	/* Post nav */
 	.post-nav{padding:10px 10px 4px}
 
@@ -1112,6 +1111,24 @@ html,body{overflow-x:hidden}
 	#Subheader>div>div>h1{ margin: 0px auto !important}
 }
 
+
+/* #Mobile, Small < 360 ------------------------------------------------------- #Tablet (Portrait) & Mobile < 768 */
+
+@media only screen and (max-width: 350px){
+	#logo {
+		height: 120px;
+		line-height: 120px;
+	}
+
+	#Action_bar .contact_details a {
+		font-size: 18px;
+	}
+
+	.headerSlideTxt center	{
+		font-size: 26px;
+		margin-top: 60px;
+	}
+}
 
 /* Retina | iPad ----------------------------------------------------------------------------------------------- Retina | iPad */
 @media only screen and (max-device-width: 1024px){
