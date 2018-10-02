@@ -27,12 +27,14 @@ Github Repo:
 
 }
 
-/* #Mobile (Portrait) < 480 ------------------------ #Mobile (Portrait) < 480 */
+/* #Tablet (Portrait) < 480 ------------------------ #Mobile (Portrait) < 480 */
 /* @media only screen and (min-width: 448px) and (max-width: 500px) */
 { }
 
+
+
 /* #Mobile, Large < 425 ---------------------------------------------------- */
-@media only screen and (max-width: 424px)
+@media only screen and (max-width: 426px)
 {
   #logo {
   	height: 130px !important;
@@ -60,7 +62,7 @@ Github Repo:
 }
 
 /* #Mobile, Medium < 375 ----------------------------------------------------*/
- @media only screen and (max-width: 375px)
+ @media only screen and (max-width: 376px)
 {
   #logo {
   	height: 130px !important;
@@ -88,7 +90,7 @@ Github Repo:
 }
 
 /* #Mobile, Small < 320 -----------------------------------------------------*/
-@media only screen and (max-width: 320px)
+@media only screen and (max-width: 321px)
 {
   #logo {
 		height: 130px !important;
