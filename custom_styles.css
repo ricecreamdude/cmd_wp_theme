@@ -32,36 +32,60 @@ Github Repo:
 { }
 
 /* #Mobile, Large < 425 ---------------------------------------------------- */
-/* @media only screen and (max-width: 425px)
+@media only screen and (max-width: 424px)
 {
   #logo {
-		height: 140px !important;
-		line-height: 140px !important;
-	}
-  	div#Action_bar{
+  	height: 130px !important;
+  	line-height: 130px !important;
+  }
+  div#Action_bar{
   	padding: 0px 0 0px 0 !important;
-	}
-
-	#Action_bar .contact_details a {
-		font-size: 18px;
-	}
-} */
+  }
+  #Action_bar .contact_details a {
+  		font-size: 16px;
+  }
+    /* BG-image */
+  #rev_slider_1_1_wrapper{
+    height: 220px!important;
+  }
+    /* Slider text */
+  #slide-1-layer-21 center {
+    font-size: 22px !important;
+    margin-top: 5px !important;
+  }
+    /*Learn More Button*/
+  .tp-parallax-wrap {
+   visibility: hidden;
+  }
+}
 
 /* #Mobile, Medium < 375 ----------------------------------------------------*/
-/* @media only screen and (max-width: 375px)
+ @media only screen and (max-width: 375px)
 {
   #logo {
-		height: 130px !important;
-		line-height: 130px !important;
-	}
-  	div#Action_bar{
+  	height: 130px !important;
+  	line-height: 130px !important;
+  }
+  div#Action_bar{
   	padding: 0px 0 0px 0 !important;
-	}
-
-	#Action_bar .contact_details a {
-		font-size: 16px;
-	}
-) */
+  }
+  #Action_bar .contact_details a {
+  		font-size: 16px;
+  }
+    /* BG-image */
+  #rev_slider_1_1_wrapper{
+    height: 220px!important;
+  }
+    /* Slider text */
+  #slide-1-layer-21 center {
+    font-size: 22px !important;
+    margin-top: 5px !important;
+  }
+    /*Learn More Button*/
+  .tp-parallax-wrap {
+   visibility: hidden;
+  }
+}
 
 /* #Mobile, Small < 320 -----------------------------------------------------*/
 @media only screen and (max-width: 320px)
@@ -76,16 +100,18 @@ Github Repo:
   #Action_bar .contact_details a {
   		font-size: 16px;
   	}
-
-  #slide-1-layer-21 center {
-  	font-size: 22px !important;
-    margin-top: 5px !important;
-  }
-
+  /* BG-image */
   #rev_slider_1_1_wrapper{
     height: 220px!important;
   }
+
+  /* Slider text */
+  #slide-1-layer-21 center {
+    font-size: 22px !important;
+    margin-top: 5px !important;
+  }
+  /*Learn More Button*/
  .tp-parallax-wrap {
-  visibility: hidden;
+   visibility: hidden;
   }
 }
